@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen final - Clase javascript</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="status" style="display: none;">
+    <p style="font-size: 18px; font-weight: 800;">Partidas totales: <b id="id-games"></b></p>
+    <p>Victorias: <b id="id-victories"></b></p>
+    <p>Derrotas: <b id="id-losses"></b></p>
+</div>
+
+<form action="" id="gameStartForm">
+    <h1>Bienvenidos al juego de lanzar los dados</h1>
+    <h3>Toma unos dados e intenta que al lanzarlos, los resultados sean iguales en cada uno de ellos. Pero tranquilo, en cada lanzamiento, podrás guardar los dados de un valor que tu quieras para el próximo lanzamiento.
+        <h4>Podrás personalizar la cantidad de dados a lanzar en cada partida y cuantos lanzamientos tendrás para lograrlo.</h4>
+        <b>¡Buena suerte!</b></b></h3>
+    <p class="test">¿Cuantos dados quieres lanzar?</p>
+    <input type="number" id="diceQuantityInput" value="3" min="3" max="50" placeholder="indique cuantos números quieres lanzar">
+    <p>¿Cuantos intentos quieres tener?</p>
+    <input type="number" id="diceRerollInput" value="2" min="2" max="999" placeholder="indique cuantos intentos quiere tener">
+    <br>
+    <button type="submit" id="a-jugar" style="margin-top: 20px;">¡A jugar!</button>
+</form>
+
+<div id="anuncios">   
+</div>
+
+    <div id="dice-container"></div>
+
+<div id="historial-rerolls" style="display: none;">
+<div style="float: right; border-radius: 50%;">   <button id="cerrar_historial">X</button></div>
+<h2>Los resultados de tus Lanzamientos previos en esta partida fueron:</h2>
+</div>
+
+   <div id="volver-a-jugar" style="display: none;">
+    
+    <button id="volver-btn" style="margin-top: 20px;" >¿Quieres volver a jugar?</button>
+
+    <button id="call-rerolls-data">Ver historial de relanzamientos</button>
+
+</div>
+   
+    <script src="js/v17.js"></script>
+    <script src="js/anime.min.js"></script>
+
+</body>
+</html>

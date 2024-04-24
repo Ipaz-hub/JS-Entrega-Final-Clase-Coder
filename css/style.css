@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+#gameStartForm, #volver-a-jugar {
+    text-align: center;
+    max-width: 700px;
+    padding: 20px;
+    margin: 0 auto;
+
+}
+
+.hidden {display: none;}
+
+#diceQuantityInput, #diceRerollInput {
+    font-size: 20px;
+    width: 60px;
+}
+
+#dice-container {
+    max-width: 550px;
+    min-height: 111px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: grey;
+    border-radius: 20px;
+    text-align: center;
+}
+.diceStyle {
+    max-width: 100px;
+    margin: 5px;
+}
+#anuncios, #historial-rerolls {
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+
+}
+
+#historial-rerolls {
+    border: 1px solid;
+border-radius: 20px;
+background-color: #fff;
+position: fixed;
+top: 20vh;
+transform: translateY(50%);
+max-width: 500px;
+}
+
+#anuncios button, #volver-a-jugar button, #gameStartForm button{
+font-size: 22px;
+font-weight: 600;
+margin: 10px;
+padding: 20px 27px;
+border-radius: 20px;
+border: 0px;
+background: #d4d4d4;
+}
+
+#call-rerolls-data {
+margin: 10px auto!important;
+}
+
+#status {
+    display: block;
+background-color: grey;
+margin: 0;
+padding: 10px;
+width: 180px;
+border-radius: 0 0 90px;
+position: fixed;
+top: 0;
+}
+
+
+#rollTheDice:hover, #volver-btn:hover, #a-jugar:hover, .btn-keep-dice:hover {
+    /*background:#FFC300;*/
+    animation: lightUp 1s infinite;
+
+} 
+
+@keyframes lightUp {
+    0%     {background-color:#d4d4d4;}
+50.0%  {background-color:#FFC300;}
+100.0%  {background-color:#d4d4d4;}
+}
